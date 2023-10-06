@@ -1,0 +1,6 @@
+{
+  "ignorePatterns": [
+    "next-env.d.ts"
+  ],
+  "rules": {}
+}
