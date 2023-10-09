@@ -2,10 +2,10 @@
 // import { headerLogo } from '@/assets/images/index'
 // import Logo from '@/assets/images/header-logo.svg'
 // import Image from 'next/image'
-import { headerLogo } from '@/assets/images/index'
+import { headerLogo } from '@/public/images/index'
 import { navLinks } from '../constants'
 import Image from "next/image"
-import { hamburger } from '@/assets/icons'
+import { hamburger } from '@/public/icons'
 
 
 const Nav = () => {
@@ -20,7 +20,7 @@ const Nav = () => {
             height={29}
           />
         </a>
-        <ul className='flex-1 flex justify-end items-center gap-16 hidden lg:inline-flex '>
+        <ul className='flex-1 flex justify-end items-center gap-16 hidden lg:inline-flex px-10'>
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
