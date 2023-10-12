@@ -5,6 +5,10 @@ pipeline {
     stage("build"){
       steps {
         echo 'This is build stage in agent'
+        script {
+            def test = 2+2>3 ? 'cool commit': 'not cool commit'
+            echo test
+        }
       }
     }
     stage("test"){
